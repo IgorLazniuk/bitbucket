@@ -24,7 +24,7 @@ import java.util.ArrayList;
  * this class provides additional methods: myAdd, myDel, myMax, myAver
  * myGet, myIndexOf.
  */
-public class MyCollection extends ArrayList<Integer> {
+public class MyList extends ArrayList<Integer> {
 
     public void myAdd(Integer element) {
         if (element != null) {

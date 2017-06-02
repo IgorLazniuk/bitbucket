@@ -6,20 +6,20 @@ package module021;
  */
 public class Run {
     public static void main(String[] args) {
-        MyCollection myCollection = new MyCollection();
-        myCollection.myAdd(0);
-        myCollection.myAdd(10);
-        System.out.println(myCollection);
-        myCollection.myAdd(2);
-        System.out.println(myCollection);
-        myCollection.myAdd(5);
-        System.out.println(myCollection);
-        myCollection.myDel(17);
-        System.out.println(myCollection);
-        System.out.println(myCollection.myMax());
-        System.out.println(myCollection.myAver());
-        System.out.println(myCollection.myGet(2));
-        System.out.println(myCollection.myIndexOf(-10));
+        MyList myList = new MyList();
+        myList.myAdd(0);
+        myList.myAdd(10);
+        System.out.println(myList);
+        myList.myAdd(2);
+        System.out.println(myList);
+        myList.myAdd(5);
+        System.out.println(myList);
+        myList.myDel(17);
+        System.out.println(myList);
+        System.out.println(myList.myMax());
+        System.out.println(myList.myAver());
+        System.out.println(myList.myGet(2));
+        System.out.println(myList.myIndexOf(-10));
 
 
     }
