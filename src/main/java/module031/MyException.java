@@ -1,8 +1,8 @@
 package module031;
 
-/**
- * Constructs a new exception with "MyQueue is overlimit" message.
+/**Create custom exceptions and throw in case of errors.
  */
+
 public class MyException extends Exception {
     @Override
     public String getMessage() {
@@ -11,3 +11,8 @@ public class MyException extends Exception {
 
 
 }
+
+/**
+ * Constructs a new exception with "MyQueue is overlimit" message.
+ */
+

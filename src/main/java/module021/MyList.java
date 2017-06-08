@@ -17,13 +17,7 @@ import java.util.ArrayList;
  *It is not allowed to enter null, characters, and other values ​​into the collection, except integers.
  */
 
-/**
- * Resizable-array extends of the ArrayList class.  Extends
- * all optional list operations, and does not permit any elements exept
- * Integer.  In addition to extending of the ArrayList class,
- * this class provides additional methods: myAdd, myDel, myMax, myAver
- * myGet, myIndexOf.
- */
+
 public class MyList extends ArrayList<Integer> {
 
     public void myAdd(Integer element) {
@@ -92,3 +86,11 @@ public class MyList extends ArrayList<Integer> {
 
 
 }
+
+/**
+ * Resizable-array extends of the ArrayList class.  Extends
+ * all optional list operations, and does not permit any elements exept
+ * Integer.  In addition to extending of the ArrayList class,
+ * this class provides additional methods: myAdd, myDel, myMax, myAver
+ * myGet, myIndexOf.
+ */
