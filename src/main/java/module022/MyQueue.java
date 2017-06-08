@@ -1,5 +1,7 @@
 package module022;
 
+import module031.MyException;
+
 import java.util.LinkedList;
 
 /**
@@ -21,7 +23,12 @@ public class MyQueue<E> extends LinkedList {
     public void myAdd(E element) {
 
         if (this.size() >= this.limit) {
-
+            try {
+                throw new MyException();
+            } catch (MyException e) {
+                System.err.println(e.getMessage());
+                e.printStackTrace();
+            }
             this.remove(0);
         }
 
@@ -30,8 +37,6 @@ public class MyQueue<E> extends LinkedList {
     }
 
 }
-
-
 
 
 /**

@@ -5,7 +5,7 @@ package module022;
  */
 public class Run {
     public static void main(String[] args) {
-        MyQueue <Integer> myQueue  = new MyQueue();
+        MyQueue <Integer> myQueue  = new MyQueue(2);
         myQueue.myAdd(1);
         myQueue.myAdd(2);
         myQueue.myAdd(3);
