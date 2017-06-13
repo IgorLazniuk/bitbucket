@@ -6,7 +6,7 @@ package module031;
 public class MyException extends Exception {
     @Override
     public String getMessage() {
-        return "My Queue is overlimit";
+        return "Element is not Integer";
     }
 
 

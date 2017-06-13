@@ -7,7 +7,7 @@ import module031.MyException;
  */
 public class Run {
     public static void main(String[] args) {
-        MyQueue<Integer> myQueue = new MyQueue(3);
+        MyQueue myQueue = new MyQueue(3);
 
 
         try {
@@ -15,6 +15,7 @@ public class Run {
             myQueue.myAdd(2);
             myQueue.myAdd(3);
             myQueue.myAdd(4);
+            myQueue.myAdd("11");
         } catch (MyException e) {
             System.err.println(e.getMessage());
         }
