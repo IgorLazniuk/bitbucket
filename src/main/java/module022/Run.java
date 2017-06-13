@@ -19,9 +19,12 @@ public class Run {
         } catch (MyException e) {
             System.err.println(e.getMessage());
         }
+        finally {
+            System.out.println(myQueue);
+        }
 
 
 
-        System.out.println(myQueue);
+
     }
 }
