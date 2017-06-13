@@ -27,19 +27,14 @@ public class MyQueue<E> extends LinkedList {
         this.limit = size;
     }
 
-    public void myAdd(E element) {
+    public void myAdd(E element) throws MyException {
 
 
-            try {
-                if (this.size() >= this.limit) {
-                    throw new MyException();
-                }
-            } catch (MyException e) {
-                System.err.println(e.getMessage());
-                e.printStackTrace();
-            }
-            this.remove(0);
+        if (this.size() >= this.limit) {
+            throw new MyException();
+        }
 
+        this.remove(0);
 
 
         this.addLast(element);
