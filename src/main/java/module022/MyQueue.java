@@ -35,7 +35,7 @@ public class MyQueue<E> extends LinkedList {
 
             if (this.size() >= this.limit) {
 
-                this.remove(0);
+                //this.remove(0);
                 throw new MyException();
 
             }
