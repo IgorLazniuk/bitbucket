@@ -7,14 +7,19 @@ import module031.MyException;
  */
 public class Run {
     public static void main(String[] args) {
-        MyQueue <Integer> myQueue  = new MyQueue(2);
+        MyQueue<Integer> myQueue = new MyQueue(2);
+
+
         try {
             myQueue.myAdd(1);
             myQueue.myAdd(2);
             myQueue.myAdd(3);
+            myQueue.myAdd(4);
         } catch (MyException e) {
-           // e.printStackTrace();
+            e.printStackTrace();
         }
+
+
 
         System.out.println(myQueue);
     }
