@@ -1,7 +1,5 @@
 package module022;
 
-import module031.MyException;
-
 import java.util.LinkedList;
 
 /**

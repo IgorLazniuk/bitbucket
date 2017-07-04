@@ -1,29 +1,30 @@
 package module022;
 
-import module031.MyException;
+import java.util.Scanner;
 
 /**
  * Created by IGOR.LAZNIUK on 02.06.2017.
  */
 public class Run {
     public static void main(String[] args) {
-        MyQueue myQueue = new MyQueue(3);
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input size: ");
+        int size = sc.nextInt();
+        MyQueue myQueue = new MyQueue(size);
 
         try {
-            myQueue.myAdd(1);
-            myQueue.myAdd(2);
-            myQueue.myAdd(3);
-            myQueue.myAdd(4);
-            myQueue.myAdd("11");
+
+            for (int i = 0; i < size; i++) {
+                System.out.print("input element No." + i+ " ");
+                myQueue.myAdd(sc.nextInt());
+            }
+
+
         } catch (MyException e) {
             System.err.println(e.getMessage());
-        }
-        finally {
+        } finally {
             System.out.println(myQueue);
         }
-
-
 
 
     }

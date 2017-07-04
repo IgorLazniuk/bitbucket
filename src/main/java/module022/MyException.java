@@ -1,4 +1,4 @@
-package module031;
+package module022;
 
 /**Create custom exceptions and throw in case of errors.
  */
