@@ -13,9 +13,9 @@ public class Run {
         MyQueue myQueue = new MyQueue(size);
 
         try {
-  
+
             for (int i = 0; i < size; i++) {
-                System.out.print("input element No." + i+ " ");
+                System.out.print("input element No." + i + " ");
                 myQueue.myAdd(sc.nextInt());
             }
 

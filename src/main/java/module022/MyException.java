@@ -1,6 +1,7 @@
 package module022;
 
-/**Create custom exceptions and throw in case of errors.
+/**
+ * Create custom exceptions and throw in case of errors.
  */
 
 public class MyException extends Exception {

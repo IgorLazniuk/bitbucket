@@ -28,18 +28,17 @@ public class MyQueue<E> extends LinkedList {
 
     public void myAdd(E element) throws MyException {
 
-if (!(element instanceof Integer)){
-    throw new MyException();
+        if (!(element instanceof Integer)) {
 
-}
+        }
 
 
         if (this.size() >= this.limit) {
 
-                this.remove(0);
+            this.remove(0);
 
-            }
-            this.addLast(element);
+        }
+        this.addLast(element);
 
     }
 
