@@ -9,6 +9,7 @@ import java.util.Scanner;
  */
 public class DeveloperView {
     public int input;
+
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         startMenu();
     }
@@ -28,10 +29,10 @@ public class DeveloperView {
         }
     }
 
-    public static void  menuLogic() throws IOException, ClassNotFoundException {
+    public static void menuLogic() throws IOException, ClassNotFoundException {
         DeveloperController developerController = new DeveloperController();
         Scanner sc = new Scanner(System.in);
-       int input = sc.nextInt();
+        int input = sc.nextInt();
         int id;
         switch (input) {
             case 1:
@@ -48,7 +49,8 @@ public class DeveloperView {
                 int newId;
                 System.out.println("Enter new ID");
                 newId = sc.nextInt();
-                developerController.edit(new Developer(id), new Developer(newId));;
+                developerController.edit(new Developer(id), new Developer(newId));
+                ;
                 break;
             case 3:
                 System.out.println(developerController.view());
@@ -60,9 +62,13 @@ public class DeveloperView {
                 break;
 
 
+            case 5:
+                System.exit(0);
+                break;
+
             default:
                 System.out.println("Please try again");
-                ;
+
                 break;
         }
     }

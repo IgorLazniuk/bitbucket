@@ -20,7 +20,7 @@ public class DeveloperController {
 
 
     public void add(Developer developer) throws IOException, ClassNotFoundException {
-//        arrayList =developerDAO.read();
+        arrayList =developerDAO.read();
         arrayList.add(developer);
         developerDAO.write(arrayList);
 
