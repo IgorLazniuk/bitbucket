@@ -10,12 +10,12 @@ import java.util.Scanner;
 public class DeveloperView {
     public int input;
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) {
         startMenu();
     }
 
 
-    public static void startMenu() throws IOException, ClassNotFoundException {
+    public static void startMenu() {
 
 
         while (true) {
@@ -29,7 +29,7 @@ public class DeveloperView {
         }
     }
 
-    public static void menuLogic() throws IOException, ClassNotFoundException {
+    public static void menuLogic() {
         DeveloperController developerController = new DeveloperController();
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();

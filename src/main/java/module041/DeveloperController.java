@@ -12,46 +12,32 @@ public class DeveloperController {
     DeveloperDAO developerDAO = new DeveloperDAO();
 
 
-
-     ArrayList<Developer> arrayList = new ArrayList<Developer>();
-
+    ArrayList<Developer> arrayList = new ArrayList<Developer>();
 
 
-
-
-    public void add(Developer developer) throws IOException, ClassNotFoundException {
-        arrayList =developerDAO.read();
+    public void add(Developer developer) {
+        arrayList = developerDAO.read();
         arrayList.add(developer);
         developerDAO.write(arrayList);
 
 
     }
 
-    public void edit(Developer oldDeveloper, Developer newDeveloper) throws IOException, ClassNotFoundException {
-       delete(oldDeveloper);
-       add(newDeveloper);
+    public void edit(Developer oldDeveloper, Developer newDeveloper) {
+        delete(oldDeveloper);
+        add(newDeveloper);
     }
 
-    public ArrayList<Developer> view() throws IOException, ClassNotFoundException {
+    public ArrayList<Developer> view() {
 
         return developerDAO.read();
     }
 
 
-    public void delete(Developer developer)  {
-        try {
-            arrayList =developerDAO.read();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+    public void delete(Developer developer) {
+        arrayList = developerDAO.read();
         arrayList.remove(developer);
-        try {
-            developerDAO.write(arrayList);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        developerDAO.write(arrayList);
 
     }
 
