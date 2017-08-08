@@ -3,7 +3,7 @@ package module05;
 import java.util.Arrays;
 
 /**
- * Created by IGOR.LAZNIUK on 08.08.2017. 
+ * Created by IGOR.LAZNIUK on 08.08.2017.
  */
 public class MyThread extends Thread {
     int i;
@@ -11,7 +11,7 @@ public class MyThread extends Thread {
 
     public MyThread(int i) {
         this.i = i;
-    }
+    }  
 
     public void run() {
         synchronized (myArray) {
