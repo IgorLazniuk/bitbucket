@@ -38,10 +38,20 @@ public class DeveloperController {
     }
 
 
-    public void delete(Developer developer) throws IOException, ClassNotFoundException {
-        arrayList =developerDAO.read();
+    public void delete(Developer developer)  {
+        try {
+            arrayList =developerDAO.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         arrayList.remove(developer);
-        developerDAO.write(arrayList);
+        try {
+            developerDAO.write(arrayList);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
